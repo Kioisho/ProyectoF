@@ -1,0 +1,71 @@
+/* Reproductor de música */
+.music-player {
+    width: 100%;
+    padding: 10px 0;
+    background-color: #f3f3f3;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Para asegurarse de que esté siempre visible */
+}
+
+/* Ajusta el body para dejar espacio para el reproductor */
+body {
+    padding-top: 60px; /* Asegúrate de que no se superponga con el contenido */
+}
+
+body {
+    display: flex;
+    align-items: flex-start; /* Empieza un poco desde arriba */
+    justify-content: center; 
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f8ff; /* Color de fondo suave */
+    font-family: Arial, sans-serif;
+}
+
+.card {
+    padding: 20px;
+    width: 350px;
+    border-radius: 20px;
+    background: #ffffff;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    text-align: center; 
+}
+
+.card-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2e54a7;
+    margin-bottom: 10px;
+}
+
+.card-body {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.contactButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #2e54a7;
+    color: white;
+    cursor: pointer;
+    text-decoration: none; /* Sin subrayado */
+    display: inline-flex; /* Flex para icono y texto */
+    align-items: center;
+    transition: background-color 0.3s;
+}
+
+.iconButton {
+    margin-left: 8px; 
+}
+
+.contactButton:hover {
+    background-color: #1d3a7c; 
+}
